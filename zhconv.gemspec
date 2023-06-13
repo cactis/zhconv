@@ -6,4 +6,7 @@ Gem::Specification.new do |spec|
   spec.name          = "zhconv"
   spec.version       = '0.1.1'
   spec.summary       = %q{convert}
+  spec.authors       = ["siuying"]
 end
+
+
