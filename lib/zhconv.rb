@@ -11,7 +11,7 @@ module ZhConv
   class Converter
     def initialize(url)
       @mapping = {}    
-      table = open(url).read
+      table = URI.open(url).read
       table.lines do |line|
         matches = line.match(/^[\*\"]([^\"=]+)\"?\s*=>\s*\"?([^\s\/\"]+)\s?.*\"?[;,]$/)
         if matches
